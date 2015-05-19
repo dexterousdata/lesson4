@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Key Ideas</h1>
+	<br>
+
+	<div class="lesson">
+
+		<h1>Modifing a Page</h1>
+
+		<div class="concept">		
+			<h2>Servers</h2>
+			<p>
+				A user requests a page through their web browser of choice. A Get request is sent to the IP / URL of the servers that host the requested webpage. The webpage is then returned to the user where it is rendered in their browser 
+			</P>
+		</div>
+
+		<div class="concept">		
+			<h2>Validating Inputs</h2>
+			<p> 
+				Validating user inputs is very inportant for security. If escaping is not used then HTML can be entered into submition boxes creating a security threat. This also assits the user experiance by keeping the page apearing the same while escaping is appropriatly used.
+			</p>
+		</div>
+
+		<div class="concept">		
+			<h2>HTML Templates</h2>
+			<p>
+				HTML Templates are used by programmers to avoid repotition alowing them to use their time more efficantly elsewere. By not having to retype code that can be stored in a template programmers save a lot of time.
+			</p>
+		</div>
+
+		<div class="concept">		
+			<h2> Projects </h2>
+			<p>	
+				Two final projects were required for lesson 4. The first was a validation exercise of a birthdate entry and the second was a shopping list
+			</p>
+		</div>
+	</div>
+
+<form>
+	<h2>Add a Food</h2>
+	<input type="text" name="food">
+	{% if items %}
+		{% for element in items %}
+			<input type="hidden" name="food" value="{{element}}">
+		{% endfor %}
+	<button>Add</button>
+
+	{% if items and {{element}} != "" %}
+		<br>
+		<br>
+
+		<h2>Shopping List</h2>
+		<ul>
+			{% for element in items %}
+				<li>{{element}}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+</form
+
+
+
+{% endblock %}

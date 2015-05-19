@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Key Ideas - Lesson 2</h1>
+
+		<div class="lesson">
+
+			<div class="lesson - tital">
+			<h1>Lesson 2.1 - "Serious Programming"</h1>
+			</div>
+
+			<div class="concept">
+				<h2>Computer</h2>
+					<p>
+						A computer can be programed to do just about anything. Programmers are only limited by their imagination.
+					</p>
+			</div>
+
+			<div class="concept">
+				<h2>Program</h2>
+					<p>
+						A program is a procdure, a set of instructions of things for the computer to do. i.e. 1) store in memory variable "a" to represent a value 10. <br>
+						2) compute a times 5
+						>>> 50
+					</p>
+			</div>
+
+			<div class="concept">
+				<h2>Language</h2>
+					<p>
+						Simply the language that the spicific program understands. Not to differet to Japanese people sepeaking Japanese, Python has a set of syntaxes making it it's own language - Python-ese if you will =)
+					</p>
+			</div>
+
+			<div class="concept">
+				<h2>Python</h2>
+					<p>
+						Python is an interprater. It converts the code inputed to an output
+					</p>
+			</div>
+
+			<div class="concept">
+				<h2>Grammar and expressions</h2>
+					<p>
+						Grammar is extreemly important thats why syntaxes are used, you are exactly correct or not. No confusion.<br>
+						<br>
+						For example:<br>
+
+						<code>
+							variable = value<br>
+							a = 10
+						</code>
+
+					</p>
+			</div>
+		</div>	
+
+		<div class="lesson">
+
+			<div class="lesson - tital">
+			<h1>Lesson 2.2 - Variables and Strings</h1>
+			</div>
+
+			<div class="concept">
+				<h2>Variable</h2>
+					<p>
+						In Python a variable is an item that refers to another object. Similar to maths. <br>
+						a could reference the intiger 10 or a could reference the string "abc", and many other possibilities
+					</p>
+			</div>
+
+			<div class="concept">
+				<h2>Assign a Variable</h2>
+					<p>
+						You assign a variable through the " = " sign. a = 10 traslates to the symbol "a" is  now binded to the intager value of 10. So at this point "a" and 10 have the same value.
+					</p>
+					<p>
+						"=" when assigning a variable is different to maths were you are stating 2 + 3 = (is equal to) 5. Assiging binds a value to a variable so a = a - 1 is one less than a's current value. In maths this is not possable, 
+					</p>
+			</div>
+
+			<div class="concept">
+				<h2>Variable Uses</h2>
+					<p>
+						Variable's are used to add redability to code. Trasforming a number or string it somthing easily reconisable
+					</p>	
+					<p>
+						To note:<br>
+						<code>2 + 2</code>
+						and
+						<code>"2" + "2"</code>
+						are very different. The first is intager addition and the second is concatanation of strings
+					</p>
+			</div>
+		</div>
+
+		<div class="lesson">
+
+			<div class="lesson - tital">
+				<h1>Lesson 2.3 - Procdures</h1>
+			</div>
+
+			<div class="concept">
+				<h2>Functions</h2>
+					<p>
+						Functions or 'procdures' are sub programs within the larger program. They act to complete a task for each given input. The top program can call on a sub program at any time and give inputs. The funciton then provides the output the top program uses. 
+					</p>
+					<p>
+						Making a function is creating the sub program. The internal procdures for the function. Calling the function or using it is 'running' the sub program to provide an out put that is used by the program that called it.
+					</p>
+			</div>
+
+			<div class="concept">
+				<h2>Avoiding Repotition</h2>
+					<p>
+						Functions help programmers avoid repotion by preforming a sub task for each and every given input instead of the programmer rewriting the coad for each input.
+					</p>
+			</div>
+
+			<div class="concept">
+				<h2>Return Statment</h2>
+				<p>
+					The return statement tells the sub program what to return to the program that called it. The program that called the function then will use the provided output in its code.
+				</p>
+			</div>
+		</div>
+
+		<div class="lesson">
+
+			<div class="lesson - tital">
+				<h1>Lesson 2.4 - Loops</h1>
+			</div>
+
+			<div class="concept">
+				<h2>While Loops</h2>
+					<p>
+						While loops run while a conditoin is not met. i.e. while a != b or count < inputed number
+					</p>
+			</div>
+
+			<div class="concept">
+				<h2>For Loops</h2>
+					<p>
+						For loops go through element in a data structure. i.e. each element in a list or each letter in a string.
+					</p>
+			</div>
+		</div>
+
+{% endblock %}

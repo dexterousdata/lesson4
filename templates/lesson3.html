@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Key Ideas - Lesson 3</h1>
+    
+        <div class="lesson">
+            <div class="lesson - tital">
+                <h1>Lesson 3 - The Power of Abstraction</h1>
+            </div>
+
+            <div class="concept">
+                <h2>Object Oriented Programming</h2>
+                    <p>
+                        Object oriented programming (OOP) focuses on using objects instead of using only logic and a sequence of instructions.
+                    </p>
+                    <p>
+                        OOP is very important to avoid repetition, especially in large scale programs in all languages not only Python. By importing pre-existing modules from library’s or creating your own module and classes all that is required is to program the instances or 'objects' that the program needs.
+                    </p>
+            </div>
+
+            <div class="concept">
+                <h2>OOP Vocabulary</h2>
+                    <p>
+                        A <b>class</b> is a larger template or blueprint for code. After using the template to create the required code this is an <b>instance</b> of the class.
+                    </p>
+                    <p>
+                        A class will contain the <code>__init__</code> instance method which is the constructor called when the class is initialized. Functions inside of the class are instance methods and the variables in a class are instance variables.
+                    </p>
+            </div>
+
+            <div class="concept">
+                <h2>OOP Inheritance</h2>
+                    <p>
+                        A sub class (child) can inherit attributes from a parent class. However a subclass can overwrite the parent class if needed. This is known as method overwriting.
+                    </p>
+            </div>
+
+            <div class="concept">
+                <h2>Lesson 3 Project</h2>
+                    <p>
+                        Below are some of the movies I have enjoyed watching and was the larger project lesson 3 was working on. OOP was used to create the HTML and CSS for the folowing 6 movies.
+                    </p>
+            </div>
+        </div>
+
+
+            <!-- Trailer Video Modal -->
+            <div class="modal" id="trailer">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+                    <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&amp;h=24" alt="pic">
+                  </a>
+                  <div class="scale-media" id="trailer-video-container">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="KYz2wyBy3kc" data-toggle="modal" data-target="#trailer">
+            <img src="http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg" alt="pic" width="220" height="342">
+            <h2>Toy Story</h2>
+        </div>
+
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="cRdxXPV9GNQ" data-toggle="modal" data-target="#trailer">
+            <img src="http://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg" alt="pic" width="220" height="342">
+            <h2>Avatar</h2>
+        </div>
+
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="iszwuX1AK6A" data-toggle="modal" data-target="#trailer">
+            <img src="http://upload.wikimedia.org/wikipedia/en/1/1f/WallStreet2013poster.jpg" alt="pic" width="220" height="342">
+            <h2>Wolf of Wall Street</h2>
+        </div>
+
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="S5CjKEFb-sM" data-toggle="modal" data-target="#trailer">
+            <img src="http://upload.wikimedia.org/wikipedia/en/5/5e/The_Imitation_Game_poster.jpg" alt="pic" width="220" height="342">
+            <h2>The Imitation Game</h2>
+        </div>
+
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ePbKGoIGAXY" data-toggle="modal" data-target="#trailer">
+            <img src="http://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg" alt="pic" width="220" height="342">
+            <h2>Interstellar</h2>
+        </div>
+
+        <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="prj3URvxcHU" data-toggle="modal" data-target="#trailer">
+            <img src="http://upload.wikimedia.org/wikipedia/en/c/c3/Inglourious_Basterds_poster.jpg" alt="pic" width="220" height="342">
+            <h2>Inglorious Bastards</h2>
+        </div>
+
+            </div>
+
+{% endblock %}
+
